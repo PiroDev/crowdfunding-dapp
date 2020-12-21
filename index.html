@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TechnoPark New Crypto Course Crowdfunding</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+
+    <h1 class="page-header">TechnoPark New Crypto Course Crowdfunding</h1>
+
+    <div class="row">
+        <h3>Contract address:</h3>
+        <h5>
+            <a href="" id="contractAddress"></a>
+        </h5>
+    </div>
+
+    <div class="row">
+        <h3><label id="info"></label></h3>
+        </label>
+    </div>
+
+    <div class="row">
+        <div>
+            <h3 class="sub-header">Donate</h3>
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td><label for="donationAmount">ETH: </label> </td>
+                            <td>
+                                <input class="form-control" id="donationAmount">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" onclick="Donate()" class="btn btn-primary">Donate</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <h3 class="sub-header">Get amount of ETH funded</h3>
+            <form class="form-inline" role="form">
+                <a href="#" onclick="GetFundedAmount()" class="btn btn-primary">Get</a>
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td><label id="amount"></label></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
